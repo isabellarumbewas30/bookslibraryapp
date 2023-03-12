@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
   <div class="container">
-    <a class="navbar-brand" href="/">Isabella</a>
+    <img class="image"  src="{{ asset('admin/images/icon/Library.png')}}"  width="42px" style="margin: 1px ;padding: 0px color:white;">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +16,7 @@
           <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" href="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Contacts') ? 'active' : '' }}" href="{{route('contacts.create')}}">Contacts Us</a>
+          <a class="nav-link {{ ( $title === 'Contacts') ? 'active' : '' }}" href="{{route('contacts.create')}}">Contact Us</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
